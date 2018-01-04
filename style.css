@@ -41,18 +41,40 @@ p {
     font: 16px Helvetica;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
+    font-weight: lighter;
 }
 
-#bold_header {
-    font-size: 22px;
+.bold_header {
+    font: 22px Helvetica;
     font-weight: bold;
 }
 
-#text_block {
+.text_block {
     color: white;
     position: relative;
     padding: 20px;
     font-size: 22px;
+}
+
+.i_can_do_both {
+    font:70px Helvetica;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    font-weight: bold;
+    line-height: 90%;
+}
+
+.white_text {
+    font:22px Helvetica;  
+    color:white;
+    font-weight: lighter;
+    padding: 37px;
+}
+
+.plain_text {
+    font:18px Helvetica; 
+    font-weight: normal;
+    line-height: 150%;
 }
 
 #contacts {
