@@ -15,11 +15,15 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print(self.path)
 
+        if self.path == '/health':
+            self.send_response(200)
+            return
+
         resourceMap = {
-            '/index.html' : Resource('text/html','index.html'),
+            '/index_2.html' : Resource('text/html','index_2.html'),
             '/contacts.html' : Resource('text/html', 'contacts.html'),
             '/myCV.html' : Resource('text/html', 'myCV.html'),
-            '/' : Resource('text/html','index.html'),
+            '/' : Resource('text/html','index_2.html'),
             '/main_pic.jpg' : Resource('image/jpeg','main_pic.jpg'),
             '/main_photo_left.jpg' : Resource('image/jpeg','main_photo_left.jpg'),
             '/main_photo_right.jpg' : Resource('image/jpeg','main_photo_right.jpg'),
@@ -35,8 +39,11 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             '/binary.png' : Resource('image/png', 'binary.png'),
             '/lens.png' : Resource('image/png', 'lens.png'),
             '/lm_favicon.png' : Resource('image/png', 'lm_favicon.png'),
-            '/style.css' : Resource('text/css','style.css'),
-            '/mashkina_cv.pdf' : Resource('application/pdf', 'mashkina_cv.pdf')
+            '/style_layout.css' : Resource('text/css','style_layout.css'),
+            '/style_design.css' : Resource('text/css','style_design.css'),
+            '/mashkina_cv.pdf' : Resource('application/pdf', 'mashkina_cv.pdf'),
+            '/script.js' : Resource('application/javascript', 'script.js'),
+            '/jquery.js' : Resource('application/javascript', 'jquery.js')
         }
         
         resource = resourceMap.get(self.path, None)

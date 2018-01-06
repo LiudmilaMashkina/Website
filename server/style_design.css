@@ -1,0 +1,60 @@
+font {
+    font-family: Helvetica;
+}
+
+font.regular_light {
+    font-size: 18px;
+    color: #f3f3f3;
+    font-weight: normal;
+    line-height: 150%;
+}
+
+font.regular_dark {
+    font:18px; 
+    font-weight: normal;
+    line-height: 150%;
+}
+
+font.regular_light_bold {
+    font-size: 22px;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+font.regular_dark_bold {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+font.accent_light {
+    font-size: 55px;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+font.accent_dark {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #470637;
+    border: none;
+    color: white;
+    padding: 0px 32px 0px 32px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #cecece;
+    color: white;
+}
+
+div.d_top_nav {
+    background: #333;
+}
+
+div.highlight {
+    height: auto;
+    background-color: #333333;
+}
