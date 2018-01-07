@@ -8,6 +8,10 @@ button {
     height: 38px;
 }
 
+img {
+    display: block;
+}
+
 div.l_top_nav {
     z-index:9;
 }
@@ -15,7 +19,6 @@ div.l_top_nav {
 div.l_top_nav img{
     width: 38px;
     height: 38px;
-    display: block;
     float: left;
     margin-right: 3px;
     margin-left: 3px;
