@@ -4,6 +4,7 @@
 
 body {
     background-color: white;
+    margin: 0;
 }
 
 .regular_light {
@@ -56,6 +57,7 @@ button:hover {
 
 div.d_top_nav {
     background: #333;
+    align-items: center;
 }
 
 div.highlight {
@@ -70,9 +72,11 @@ div.highlight {
 
 #d_title {
     font-size: 55px;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
 }
 
 div.d_cpp {

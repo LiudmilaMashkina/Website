@@ -27,8 +27,8 @@
                 </a>
             </div>
 
-            <div style="float:right">
-                <span id="my_email">liudmilamashkina@gmail.com</span>
+            <div style="float:right; display: flex; align-items:center">
+                <span id="my_email" class="regular_light" style="padding-right: 10px">liudmilamashkina@gmail.com</span>
                 <button type="button" class="basic_button top_button" onclick="location.href='/mashkina_cv.pdf'">
                     my CV
                 </button>
@@ -43,22 +43,21 @@
 
             </div>
             <div class="l_box l_box_w_40 d_cpp">
-                <pre><span>class LiudmilaMashkina : public SoftwareEngineer, 
-                         public FashionDesigner {
+                <pre><span>class LiudmilaMashkina : public Human {
 public:
-    std::unique_ptr&lt;SoftwareEngineer&gt;
-        get(std::unique_ptr&lt;FashionDesigner&gt;&amp; mashkina);
+    static std::unique_ptr&lt;LiudmilaMashkina&gt; &amp; get();
 
-    std::unique_ptr&lt;Money&gt; findJob(
-        const shared_ptr&lt;Motivation&gt;&amp; purposefulness, 
-        const CV mashkinaCV, 
-        const coverLetter mashkinaLetter);
+    bool looksForJob() const { return true; }
+    bool acceptsOffer(const Offer &amp; offer) const;
 
 private:
-    LiudmilaMashkina(
-        const std::unique_ptr&lt;FashionDesigner&gt;&amp; mashkina);
+    LiudmilaMashkina(const SoftwareEngineer::Config &amp; ecfg,
+                     const FashionDesigner::Config  &amp; dcfg);
 
-    std::unique_ptr&lt;SoftwareEngineer&gt; _mashkina;
+    SoftwareEngineer _engineer;
+    FashionDesigner  _designer;
+
+    static std::unique_ptr&lt;LiudmilaMashkina&gt; _instance;
  };</span></pre>
 
             </div>
@@ -227,9 +226,9 @@ private:
         <hr style="width:50%; margin-bottom:50px"/>
         <div style="text-align:center; margin-bottom:50px">
             <span class="regular_dark_bold">
-                Contact me by email: 
+                Contact me: 
                 <br/>
-                liudmilamashkian@gmail.com
+                liudmilamashkina@gmail.com
             </span>
         </div>  
         <hr  class="d_section_margin" style="width:50%"/>       
