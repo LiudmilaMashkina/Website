@@ -87,9 +87,14 @@ div.d_cpp span {
     color: azure;
 }
 
-div.d_text {
+div.d_wide_text {
     padding-left: 40px;
     padding-right: 40px;
+    text-align: justify;
+}
+
+div.d_narrow_text {
+    padding: 15px 20px 15px 20px;
     text-align: justify;
 }
 
