@@ -87,6 +87,10 @@ div.d_cpp span {
     color: azure;
 }
 
+div.d_cpp span.hl {
+    color: #fba81e;
+}
+
 div.d_text {
     padding-left: 40px;
     padding-right: 40px;

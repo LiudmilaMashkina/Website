@@ -43,22 +43,21 @@
 
             </div>
             <div class="l_box l_box_w_40 d_cpp">
-                <pre><span>class LiudmilaMashkina : public SoftwareEngineer, 
-                         public FashionDesigner {
+                <pre><span>class LiudmilaMashkina : Human {
 public:
-    std::unique_ptr&lt;SoftwareEngineer&gt;
-        get(std::unique_ptr&lt;FashionDesigner&gt;&amp; mashkina);
+    static std::unique_ptr&lt;LiudmilaMashkina&gt; &amp; get();
 
-    std::unique_ptr&lt;Money&gt; findJob(
-        const shared_ptr&lt;Motivation&gt;&amp; purposefulness, 
-        const CV mashkinaCV, 
-        const coverLetter mashkinaLetter);
+    bool looksForJob() const { return true; }
+    bool acceptJob(const Offer &amp; offer);
 
 private:
-    LiudmilaMashkina(
-        const std::unique_ptr&lt;FashionDesigner&gt;&amp; mashkina);
+    LiudmilaMashkina(const SoftwareEngineer::Config &amp; ecfg,
+                     const FashionDesigner::Config  &amp; dcfg);
 
-    std::unique_ptr&lt;SoftwareEngineer&gt; _mashkina;
+    SoftwareEngineer _engineer;
+    FashionDesigner  _designer;
+
+    static std::unique_ptr&lt;LiudmilaMashkina&gt; _instance;
  };</span></pre>
 
             </div>
@@ -226,9 +225,9 @@ private:
         <hr style="width:50%; margin-bottom:50px"/>
         <div style="text-align:center; margin-bottom:50px">
             <span class="regular_dark_bold">
-                Contact me by email: 
+                Contact me: 
                 <br/>
-                liudmilamashkian@gmail.com
+                liudmilamashkina@gmail.com
             </span>
         </div>  
         <hr  class="d_section_margin" style="width:50%"/>       
