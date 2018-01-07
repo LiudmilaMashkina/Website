@@ -48,7 +48,7 @@ public:
     static std::unique_ptr&lt;LiudmilaMashkina&gt; &amp; get();
 
     bool looksForJob() const { return true; }
-    bool acceptJob(const Offer &amp; offer);
+    bool acceptsOffer(const Offer &amp; offer) const;
 
 private:
     LiudmilaMashkina(const SoftwareEngineer::Config &amp; ecfg,
