@@ -1,6 +1,3 @@
-body {
-    background-color: azure;
-}
 
 img.js_sized {
     width: 0;
@@ -44,7 +41,7 @@ div {
 }
 
 div.l_main_div {
-    max-width: 1200px;
+    max-width: 95%;
     position: relative;
     margin: 0 auto;
 }
@@ -71,6 +68,10 @@ div.l_box_w_30 {
     width: 30%;
 }
 
+div.l_box_w_35 {
+    width: 35%;
+}
+
 div.l_box_w_40 {
     width: 40%;
 }
@@ -91,7 +92,13 @@ div.l_box_w_70 {
     div.l_dynamic_section {
         display: inline-block;
     }
+    div.l_box {
+        margin-bottom: 150px;
+    }    
     div.l_box_w_30 {
+        width: 100%;
+    }
+    div.l_box_w_35 {
         width: 100%;
     }
     div.l_box_w_40 {

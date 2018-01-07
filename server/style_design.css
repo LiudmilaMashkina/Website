@@ -1,38 +1,42 @@
-font {
-    font-family: Helvetica;
+* {
+    font-family: "Helvetica Neue", "Helvetica";
 }
 
-font.regular_light {
+body {
+    background-color: white;
+}
+
+.regular_light {
     font-size: 18px;
     color: #f3f3f3;
     font-weight: normal;
     line-height: 150%;
 }
 
-font.regular_dark {
+.regular_dark {
     font:18px; 
     font-weight: normal;
     line-height: 150%;
 }
 
-font.regular_light_bold {
+.regular_light_bold {
     font-size: 22px;
     color: #f3f3f3;
     font-weight: bold;
 }
 
-font.regular_dark_bold {
+.regular_dark_bold {
     font-size: 22px;
     font-weight: bold;
 }
 
-font.accent_light {
+.accent_light {
     font-size: 55px;
     color: #f3f3f3;
     font-weight: bold;
 }
 
-font.accent_dark {
+.accent_dark {
     font-size: 55px;
     font-weight: bold;
 }
@@ -57,4 +61,54 @@ div.d_top_nav {
 div.highlight {
     height: auto;
     background-color: #333333;
+    padding: 10px;
+}
+
+.d_section_margin {
+    margin-bottom: 150px;
+}
+
+#d_title {
+    font-size: 55px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+div.d_cpp {
+    background-color: black;
+    opacity: 0.7;
+    padding-left: 20px;
+}
+
+div.d_cpp span {
+    font-family: monospace;
+    font-size: 12px;
+    color: azure;
+}
+
+div.d_text {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#supervised_block {
+    background-color: rgb(240, 240, 240);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#unsupervised_block {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    div.d_section_margin {
+        margin-bottom: 100px;
+    }
+    div.l_box {
+        margin-bottom: 75px;
+    }
 }
