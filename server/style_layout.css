@@ -107,7 +107,7 @@ div.l_box_w_80 {
     width: 80%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px), only screen and (max-device-width: 632px) {
     div.l_dynamic_section {
         display: inline-block;
     }
