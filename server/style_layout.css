@@ -1,5 +1,5 @@
 
-img.js_sized {
+.js_sized {
     width: 0;
     height: 0;
 }
@@ -66,7 +66,6 @@ div.l_flexed {
 }
 
 div.l_box {
-    min-height: 200px;
     float: left;
 }
 

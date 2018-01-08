@@ -38,11 +38,14 @@
             Liudmila Maskina
         </h1>
 
-        <div class="l_dynamic_section l_flexed d_section_margin" style="background:grey">
-            <div class="l_box l_box_w_60">
+        <div id="main_pic_system" class="l_dynamic_section l_flexed d_section_margin">
+            <div id="main_pic_wrap" class="js_sized" style="position:absolute; overflow:hidden;">
+                <img id="main_pic" src="main_pic.jpg"/>
+            </div>
+            <div id="blue" class="l_box l_box_w_60" style="margin-bottom: 0; background-color:cyan">
 
             </div>
-            <div class="l_box l_box_w_40 d_cpp">
+            <div id="main_pic_anchor" class="l_box l_box_w_40 d_cpp" style="margin-bottom: 0;">
                 <pre><span>class LiudmilaMashkina : public Human {
 public:
     static std::unique_ptr&lt;LiudmilaMashkina&gt; &amp; get();

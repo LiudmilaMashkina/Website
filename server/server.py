@@ -33,6 +33,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             '/facebook_button.png' : Resource('image/png', 'facebook_button.png'),
             '/linkedin_button.png' : Resource('image/png', 'linkedin_button.png'),
             '/beer.png' : Resource('image/png', 'beer.png'),
+            '/main_pic.jpg' : Resource('image/jpeg', 'main_pic.jpg'),
             '/beer_hor.png' : Resource('image/png', 'beer_hor.png'),
             '/christmas_tree.png' : Resource('image/png', 'christmas_tree.png'),
             '/olympic_bibs.png' : Resource('image/png', 'olympic_bibs.png'),
