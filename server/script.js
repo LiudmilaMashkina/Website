@@ -36,7 +36,7 @@ function scale_main_pic()
 
     $('#main_pic').width(img_w).height(img_h)
     $('#main_pic_wrap').width(wrap_w).height(wrap_h)
-    $('#blue').height(img_h)
+    $('#main_pic_height').height(img_h)
 }
 
 function scale() {
