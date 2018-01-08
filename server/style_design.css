@@ -48,6 +48,7 @@ button {
     color: white;
     padding: 0px 32px 0px 32px;
     text-align: center;
+    font-size: 16px
 }
 
 button:hover {
@@ -98,7 +99,7 @@ div.d_wide_text {
 }
 
 div.d_narrow_text {
-    padding: 15px 20px 15px 20px;
+    padding: 20px 20px 20px 20px;
     text-align: justify;
 }
 
