@@ -52,7 +52,11 @@ class RequestHandler(BaseHTTPRequestHandler):
 
     def logRequest(self):
         log(self.path)
+        client_ip = 'Client ip: ' + self.client_address[0]
+        log(client_ip)
 
+        if 'User-Agent' in self.headers:
+            log('User agent: ' + self.headers['User-Agent'])
 
 def run():
   log('starting server...')
