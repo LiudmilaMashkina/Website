@@ -34,9 +34,20 @@ function scale_main_pic()
     var wrap_h = img_h
     var wrap_w = total_w
 
+    var me = $('#main_pic_me')
+
     $('#main_pic').width(img_w).height(img_h)
     $('#main_pic_wrap').width(wrap_w).height(wrap_h)
     $('#main_pic_height').height(img_h)
+    me.height(img_h)
+}
+
+function position_my_pic() {
+    var left_side_w = $('#main_pic_height').width()
+    var my_pic_w = $('#main_pic_me').width()
+    var pos = left_side_w/2 - my_pic_w/2
+
+   $('#main_pic_me').css({top:0, left:pos})
 }
 
 function scale() {
@@ -47,8 +58,10 @@ function scale() {
 
 $(window).on("load", function() {
     scale()
+    position_my_pic()
 })
 
 $(window).resize(function(){
     scale()
+    position_my_pic()
 });
