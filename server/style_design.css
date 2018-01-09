@@ -8,26 +8,26 @@ body {
 }
 
 .regular_light {
-    font-size: 18px;
+    font-size: 16px;
     color: #f3f3f3;
     font-weight: normal;
     line-height: 150%;
 }
 
 .regular_dark {
-    font-size:18px; 
+    font-size:16px; 
     font-weight: normal;
     line-height: 150%;
 }
 
 .regular_light_bold {
-    font-size: 22px;
+    font-size: 20px;
     color: #f3f3f3;
     font-weight: bold;
 }
 
 .regular_dark_bold {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 

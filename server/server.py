@@ -37,7 +37,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             '/beer_hor.png' : Resource('image/png', 'beer_hor.png'),
             '/christmas_tree.png' : Resource('image/png', 'christmas_tree.png'),
             '/olympic_bibs.png' : Resource('image/png', 'olympic_bibs.png'),
-            '/binary.png' : Resource('image/png', 'binary.png'),
+            '/weights.png' : Resource('image/png', 'weights.png'),
             '/magnifier.png' : Resource('image/png', 'magnifier.png'),
             '/lm_favicon.png' : Resource('image/png', 'lm_favicon.png'),
             '/style_layout.css' : Resource('text/css','style_layout.css'),

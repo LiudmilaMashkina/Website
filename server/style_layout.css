@@ -70,12 +70,12 @@ div.l_box {
 }
 
 div.l_floating_box {
-    width: 90%;
+    width: 95%;
     display: flex;
 }
 
 div.l_floating_box_place_holder {
-    width: 20%;
+    width: 10%;
     height: 10px;
 }
 
@@ -105,6 +105,10 @@ div.l_box_w_70 {
 
 div.l_box_w_80 {
     width: 80%;
+}
+
+div.l_box_w_90 {
+    width: 90%;
 }
 
 @media (max-width: 800px), only screen and (max-device-width: 632px) {
@@ -144,6 +148,9 @@ div.l_box_w_80 {
         width: 100%;
     }
     div.l_box_w_80 {
+        width: 100%;
+    }
+    div.l_box_w_90 {
         width: 100%;
     }
 }
