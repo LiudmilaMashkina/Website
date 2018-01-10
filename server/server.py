@@ -27,6 +27,10 @@ class RequestHandler(BaseHTTPRequestHandler):
 
         filename = self.path.split('/')[-1]
         extension = filename.split('.')[-1]
+
+        if not filename:
+            filename = 'index_2.html'
+            extension = 'html'
         
         if not extension in RESOURCE_TYPES:
             self.send_response(404)
@@ -61,7 +65,7 @@ class RequestHandler(BaseHTTPRequestHandler):
 def run():
   log('starting server...')
  
-  server_address = ("0.0.0.0", 80)
+  server_address = ("0.0.0.0", 8080)
   httpd = HTTPServer(server_address, RequestHandler)
   log('running server...')
   httpd.serve_forever() 
