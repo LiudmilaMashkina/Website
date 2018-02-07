@@ -20,11 +20,10 @@ div.l_top_nav {
 }
 
 div.l_top_nav img{
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     float: left;
-    margin-right: 3px;
-    margin-left: 3px;
+    margin-left: 7px;
 }
 
 div.l_video_container {
@@ -152,5 +151,16 @@ div.l_box_w_90 {
     }
     div.l_box_w_90 {
         width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 632px) {
+    button {
+        height: 90px;
+    }
+    div.l_top_nav img{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
     }
 }

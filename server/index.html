@@ -1,250 +1,246 @@
 <!doctype html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Liudmila Mashkina</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel='shortcut icon' type='image/png' href='/lm_favicon.png' />
-    </head>
 
-    <body>
-        <div id="main_div" style="position:relative; margin:0 auto; width:1200px;">
-            <div class="topnav">
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/liudmila-mashkina-b4a10369/" target="_blank" class="topnav_socials_a">
-                    <img src="linkedin_button.png" alt="Oh ah" class="topnav_socials_img"/>
-                </a>
-            
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/ludmila.mashkina" target="_blank" class="topnav_socials_a">
-                    <img src="facebook_button.png" alt="Oh ah" class="topnav_socials_img"/>
-                </a>
+<head>
+    <meta charset="utf-8">
+    <title>Liudmila Mashkina</title>
+    <link rel="stylesheet" href="style_layout.css">
+    <link rel="stylesheet" href="style_design.css">
+    <link rel='shortcut icon' type='image/png' href='/lm_favicon.png' />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
 
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/luda_mashkina/" target="_blank" class="topnav_socials_a">
-                    <img src="instagram_button.png" alt="Oh ah" class="topnav_socials_img"/>
+<body>
+    <div class="l_main_div">
+        <div class="l_top_nav d_top_nav l_flexed">
+            <div>
+                <a href="https://www.linkedin.com/in/liudmila-mashkina-b4a10369/" target="_blank">
+                    <img src="linkedin_icon.png" />
                 </a>
-                <div style="float:right">
-                    <font id="my_email">liudmilamashkina@gmail.com</font>
-                    <button type="button" class="basic_button top_button" onclick="location.href='/mashkina_cv.pdf'">
-                        my CV
-                    </button>
+                <a href="https://www.facebook.com/ludmila.mashkina" target="_blank">
+                    <img src="facebook_icon.png" />
+                </a>
+                <a href="https://www.instagram.com/luda_mashkina/" target="_blank">
+                    <img src="instagram_icon.png" />
+                </a>
+            </div>
+
+            <div style="float:right; display: flex; align-items:center">
+                <span id="my_email" style="padding-right: 10px">liudmilamashkina@gmail.com</span>
+                <button type="button" onclick="location.href='/liudmila_mashkina_resume.pdf'">
+                    my CV
+                </button>
+            </div>
+        </div>
+        <h1 id="d_title">
+            Liudmila Mashkina
+        </h1>
+
+        <div id="main_pic_system" class="l_dynamic_section l_flexed d_section_margin">
+            <div id="main_pic_wrap" class="js_sized" style="position:absolute; overflow:hidden;">
+                <img id="main_pic" src="main_pic.jpg"/>
+                <img id="main_pic_me" src="main_pic_me.png" style="position:absolute; top:0px"/>
+            </div>
+            <div id="main_pic_height" class="l_box l_box_w_60" style="margin-bottom: 0">
+            </div>
+            <div id="main_pic_anchor" class="l_box l_box_w_40 d_cpp" style="margin-bottom: 0;">
+                <pre><span>class LiudmilaMashkina : public Human {
+public:
+    static std::unique_ptr&lt;LiudmilaMashkina&gt; &amp; get();
+
+    bool looksForJob() const { return true; }
+    bool acceptsOffer(const Offer &amp; offer) const;
+
+private:
+    LiudmilaMashkina(const SoftwareEngineer::Config &amp; ecfg,
+                     const FashionDesigner::Config  &amp; dcfg);
+
+    SoftwareEngineer _engineer;
+    FashionDesigner  _designer;
+
+    static std::unique_ptr&lt;LiudmilaMashkina&gt; _instance;
+ };</span></pre>
+
+            </div>
+        </div>
+        <div class="l_dynamic_section l_flexed d_section_margin">
+            <div class="l_box l_box_w_40">
+                <div class="d_narrow_text">
+                    <span class="regular_dark_bold">
+                        Hello! My name is Liudmila
+                    </span>
+                    <br/>
+                    <span class="regular_dark">
+                        This site is about me, designed and built by me. And
+                    </span>
+                </div>
+                <div class="highlight" style="text-align:center">
+                    <span class="accent_light">
+                        I can Do Both
+                    </span>
                 </div>
             </div>
-            
-            <br/>
-            <br/>
-
-            <h1> <font color="#b5219b">class</font> <font style="font-weight:bold">LiudmilaMaskina</font> : <font color="#1561c3">public</font> SoftwareEngineer, 
+            <div class="l_box l_box_w_60" style="text-align:center">
+                <div class="d_wide_text">
+                    <span class="regular_dark">
+                        I am a <span class="regular_dark_bold">Fashion Designer</span> and a <span class="regular_dark_bold">Software Engineer</span> - two in one.
+                        How did it happen? Rather simple! My husband got a job offer in Prague while we were living
+                        in Moscow. When we moved to Czech Republic I got the opportunity to try something new.
+                        I have been wanting to try software engineering for a while, but did not have enough free time. So,
+                    </span>
+                </div>
                 <br/>
-                <span style="display:inline-block; width: 40.45%;"></span>
-                <font color="#1561c3">public</font> FashionDesigner <font style="font-weight:bold">{</font> 
-            </h1>
-            <br/>
-            <table>
-                <tr>
-                    <td width="60%">
-                        <img id="left_pic" src="main_photo_left.jpg" alt="Oh ah" width="100%"/>                            
-                    </td>
-                    <td width="40%">
-                        <div class="image">
-                            <img id="right_pic" src="main_photo_right.jpg" alt="Oh ah" width="100%"/>
-                            <h2> 
-                                <pre class='brush: cpp'>
-<font color="#1561c3">public:</font>
-    <font color="#a1a2a8">std::unique_ptr&ltSoftwareEngineer&gt</font> 
-        getLiudmilaMashkina(
-        std::unique_ptr&ltFashionDesigner&gt&amp mashkina);
+                <br/>
+                <span class="regular_dark_bold">
+                    I decided to invest time in
+                    <br/> self-development
+                </span>
+            </div>
+        </div>
 
-    <font color="#a1a2a8">std::unique_ptr&ltMoney&gt</font> findJob(
-        <font color="#b5219b">const</font> shared_ptr&ltMotivation&gt&amp purposefulness, 
-        <font color="#b5219b">const</font> CV mashkinaCV, 
-        <font color="#b5219b">const</font> coverLetter mashkinaLetter);
-                                
-<font color="#1561c3">private:</font>
-    LiudmilaMashkina(
-        <font color="#b5219b">const</font> std::unique_ptr&ltFashionDesigner&gt&amp 
-        mashkina);
+        <div class="l_centered">
+            <div id="christmas_tree_anchor" style="text-align:right">
+                <span class="regular_dark_bold">
+                    and now
+                </span>
+                <span class="accent_dark">
+                    I can
+                    <br/> Do Both
+                </span>
+            </div>
+            <img id="christmas_tree" class="js_sized" src="christmas_tree.png" style="margin-left: 10px" />
+        </div>
+        <hr class="d_section_margin" style="width:50%"/>            
 
-    <font color="#a1a2a8">std::unique_ptr&ltSoftwareEngineer&gt</font> _mashkina;
-                                </pre>
-                                        
-                            </h2>                   
-                        </div>         
-                    </td>                        
-                </tr>
-            </table>
+        <div class="l_floating_box" style="background:#f3f3f3; align-items:center; justify-content:flex-end; margin-bottom:50px">
+            <div class="l_box_w_60" style="display:flex; align-items:center; padding-top:40px; padding-bottom:40px">
+                <div class="l_floating_box_place_holder">
+                </div>
+                <div class="l_box_w_90">
+                    <div style="text-align:center">
+                        <span class="regular_dark_bold">
+                            Supervised Learning
+                        </span>
+                    </div>
+                    <br/>
+                    <div class="d_wide_text">
+                        <span class="regular_dark">
+                            I graduated with distinction from the leading Russian design university <span class="regular_dark_bold">MSU DT</span>. 
+                            It's been six years of hard work and fun at the same time. Some days we had classes from the early morning and till 9pm, 
+                            but it was a wonderful time spent in a great atmosphere. 
+                            Hard work paid off and I got a job in the most famous Russian fashion company - <span class="regular_dark_bold">Bosco Sport</span>. 
+                            I was responsible for designing the company's main fashion line - <span class="regular_dark_bold">Russian Olympic Team</span> uniform.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="l_box_w_40" style="background:#f3f3f3">
+                <img id="bibs" src="olympic_bibs.png" width="100%" max-height="300px"/>
+            </div>
+        </div>
 
-            <h1>
-                <font style="font-weight:bold">};</font> 
-            </h1>
+        <div class="l_floating_box d_section_margin" style="align-items:center; float:right; background:#f3f3f3">
+            <div style="order:2; display:flex; align-items:center; padding-top:40px; padding-bottom:40px" class="l_box_w_50">
+                <div class="l_box_w_90">
+                    <div style="text-align:center">
+                        <span class="regular_dark_bold">
+                            Unsupervised Learning
+                        </span>
+                    </div>
+                    <br/>
+                    <div class="d_wide_text">
+                        <span class="regular_dark">
+                            I'm a self-educated Software Engineer. I started by learning the basics and solving simple
+                            programming puzzles. Soon I went deeper, studying classic data structures, algorithms, software design and complexity analysis.
+                            To practice - I developed the game on the video. It's written in C++ using Cocos2D-X game engine and runs on Mac and iOS.
+                            I started looking for a job in Prague and got 3 offers from all 3 interviews attended. But my husband also got an offer,
+                            now in USA. An opportunity again... While waiting for a work permit I decided to build this website to get a touch on Web development.
+                        </span>
+                    </div>
+                </div>
+                <div class="l_floating_box_place_holder">
+                </div>  
+            </div>
+            <div class="l_box_w_50" style="float:right; order:1">
+                <div class="l_video_container">
+                    <iframe src="https://www.youtube.com/embed/_g7hzH9f5ZA" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
 
-            <table style="margin-bottom: 100px">
-                <tr>
-                    <td width="40%">
-                        <font style="font-weight:bold" class="bold_header">Hello! My name is Liudmila</font>
-                    </td>
-                    <td rowspan="3" class="plain_text" style="text-align:center; font-weight:bold">
-                        I am a Fashion Designer and a Software Engineer - two in one. 
-                        <br/>
-                        <br/>
-                        How it has happened? Rather simple! My husband got new interesting job in Prague, while we were living in Moscow, 
-                        and our moving to Czech Republic presented me some free time and apportunity to try programming, as I already wished for long time. So...
-                        <br/>
-                        <font style="font-size:22px">I decided to invest this time in
-                        <br/>
-                        to</font> <font style="font-size:22px" color="#b5219b">self-development</font>.
-                    </td>
-                </tr>
-                <tr>
-                    <td width="40%" style="text-align:right">
-                        <font class="bold_header" text-align="right">and</font> <font style="font:55px Helvetica; font-weight:bold; padding-right:0.25em">I can</font>
-                        <font style="font:55px Helvetica; font-weight:bold" color="#2F63AF">Do Both</font>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="white_text" style="text-align:center; background-color:#545e6a">
-                        <font style="font-weight:bold">Current site is</font> about me,
-                        <br/>
-                        wrote and designed
-                        <br/>
-                        by <font style="font-weight:bold; font-size: 55px">me</font>.
-                    </td>
-                </tr>
-            </table>
+        <hr style="width:100%; border:none"/>
 
-            <div style="display:block; margin-bottom: 30px; margin-left: -2%" align="center">
-                <table style="display:inline-table">
-                    <tr>
-                        <td style="font:30px Helvetica; font-weight:bold">and</td>
-                        <td class="i_can_do_both" style="color:#2F63AF"> I can </td>
-                    </tr>
-                    <tr>
-                        <td class="i_can_do_both" style="padding-right:0.25em">Do</td>
-                        <td class="i_can_do_both">Both</td>
-                    </tr>
-                </table>
-                <img src="christmas_tree.png" alt="Oh ah" width="14%" style="margin-left: -50px; margin-bottom:10px; vertical-align: bottom"/>
+        <div>
+            <span class="accent_dark">I LOVE</span>
+        </div>
+        <div class="l_dynamic_section l_flexed d_section_margin">
+            <div class="l_box l_box_w_30">
+                <div div class="highlight" style="text-align:center">
+                    <span class="regular_light_bold">Solving complex problems!</span>
+                </div>
+                <div class="d_narrow_text">
+                    <span class="regular_dark d_wide_text">
+                        The bigger the problem the more effort it requires to be solved.
+                        At the same time the chance of learning something new and growing as a professional increases proportionally.
+                    </span>
+                </div>
+                <img src="weights.png" width="80%" style="margin-left:8%; margin-right:12%" />
+                <div class="d_narrow_text">
+                    <span class="regular_dark d_wide_text">
+                        Solving such problems brings a lot of satisfaction and it inspires me to <span class="regular_dark_bold">move forward</span>.
+                    </span>
+                </div>
+            </div>
+            <div class="l_box l_box_w_30">
+                <div id="magnifier_anchor" class="highlight" style="background:black; display:flex; align-items:center">
+                    <div>
+                        <span class="regular_light_bold">Learning</span>
+                        <br/>
+                        <span class="accent_light">NEW</span>
+                    </div>
+                    <img id="magnifier" class="js_sized" src="magnifier.png" style="padding-left: 10px" />
+                </div>
+                <div class="d_narrow_text">
+                    <span class="regular_dark">
+                        I believe we are lucky to live in the modern time. For ages learning was a privilege, but the
+                        World has changed sharply! Now all you need for studying is Internet and time. 
+                        <br/>
+                        <br/>
+                        <span class="regular_dark_bold">Free time is a new privilege</span>,
+                        and I think it's a crime not to spend at least a part of it on education.
+                    </span>
+                </div>
             </div>
 
-            <table style="border-spacing: 0px; margin-bottom: 50px">
-                <tr>
-                    <td width="40%" style="background-color:#f3f3f3; text-align:center; padding:15px">
-                        <font class="bold_header">supervised learning</font>
-                    </td>
-                    <td rowspan="3" width="2%"></td>
-                    <td style="background-color:#f3f3f3; text-align:center">
-                        <font class="bold_header">unsupervised learning</font>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="40%" style="background-color:#f3f3f3; text-align:center; padding:15px">
-                        <font class="plain_text">I educated free in the leading Russian design university (MSU DT)
-                                and
-                                graduated with distinction. 
-                                And as a result I found good job in the best Russian fashion company - <font color="#b5219b">Bosco Sport</font>.
-                        </font>
-                    </td>
-                    <td style="background-color:#f3f3f3; text-align:center; padding:15px">
-                        <font class="plain_text">I'm self-educated C++ programmer and 
-                            already wrote my own game for mobile platforms, 
-                            using this language (and some Python).Object Oriented Programming and 
-                            Design Patterns are not just hollow consepts for me. 
-                            And during Christmas holidays I wrote my first site.
-                        </font>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="40%" style="background-color:#f3f3f3">
-                        <img id="bibs" src="olympic_bibs.png" width="100%" style="padding-top:60px; padding-bottom:0px"/>
-                    </td>
-                    <td style="background-color:#f3f3f3" align="center"> 
-                        <iframe width="600px" height="400px" src="https://www.youtube.com/embed/_g7hzH9f5ZA"></iframe>
-                    </td>
-                </tr>
-            </table>
-
-            <br/>
-            
-            <table style="margin-bottom: 150px">
-                <tr>
-                    <td width="33%">
-                        <font class="i_can_do_both" color="#b5219b">
-                            I LOVE...
-                        </font>
-                    </td>
-                    <td width="33%" style="background-color:#A0A1A7; padding:10px">
-                        <div style="display:inline-block">
-                            <font color="#f3f3f3" style="font:34px Helvetica; font-weight: bold; float:left">
-                                learning
-                            </font>
-                            <br/>
-                            <font style="font:60px Helvetica; font-weight: bold; float:left" color="#2F63AF">
-                                NEW
-                            </font>
-                        </div>
-                        <img src="lens.png" width="30%" style="vertical-align: bottom"/>
-                    </td>
-                    <td rowspan="3" width="33%">
-                        <img src="beer_vert.png" width="102px" style="float:left; margin-right:15px"/>
-                        <div style="padding-right:20px; padding-top:70px; text-align:center">
-                            <font class="bold_header" style="line-height:130%">
-                                It is impossible to spend in Prague rather 
-                                long time and do not fell in love with draft 
-                                Black Kozel (cerpane Cerne Kozel) or Master... 
-                            </font>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="background-color:#460937; text-align:center">
-                        <font color="#f3f3f3" style="font:24px Helvetica; font-weight: bold; line-height:200%">
-                            solving complex problems!
-                        </font>
-                    </td>
-                    <td rowspan="2" class="plain_text" style="text-align:center; padding:20px">
-                        I believe that we are all lucky to live in exactly this time. 
-                        So many thousands of years learning was a privilege, but our World has changed sharply and now you just need Internet and time to study. 
-                        Free time is a new priviliege, and I think that it is a crime to not spend it on exploring World in all available ways.
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align:center; padding-bottom:0px">
-                        <font class="bold_header" style="line-height: 120%">
-                            I used binary search when I was only Fashion Designer and even didn’t know this term. 
-                        </font>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img id="binary" src="binary.png" width="100%"/>
-                    </td>
-                    <td rowspan="2" style="text-align:center; padding:20px">
-                        <font class="bold_header" style="line-height: 120%">
-                            ...but sometimes it is SO
-                            hard to force yourself 
-                            to do it...
-                        </font>
-                    </td>
-                    <td style="background-color:#333333; text-align:center">
-                        <font style="font:50px Helvetica; font-weight: bold" color="#f3f3f3">
-                            BEEEEEEEER!
-                        </font>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align:center; padding:20px">
-                        <font class="plain_text">
-                            It was my way for finding broken page in our catalogs for print, which could content over 200 pages. 
-                        </font>
-                    </td>
-                    <td>
-                        <img src="beer_hor.png" width="100%"/>
-                    </td>
-                </tr>
-            </table>
-
+            <div class="l_box l_box_w_30">
+                <div class="l_flexed">
+                    <div class="d_narrow_text" style="padding-top:0">
+                        <span class="regular_dark">
+                                It is impossible to live in Prague for a rather long time and not to fall in love 
+                                with draft Black Kozel (Kozel Černý čerpané) or Master...
+                        </span>
+                    </div>
+                </div>
+                <div style="width:100%; padding-left:20px">
+                    <img src="beer.png" width="30%"/>
+                </div>
+                <div class="highlight" style="text-align:center">
+                    <span class="accent_light">BEEEER!</span>
+                </div>
+            </div>
         </div>
-    </body>
+        <hr style="width:50%; margin-bottom:50px"/>
+        <div style="text-align:center; margin-bottom:50px">
+            <span class="regular_dark_bold">
+                Contact me: 
+                <br/>
+                liudmilamashkina@gmail.com
+            </span>
+        </div>  
+        <hr  class="d_section_margin" style="width:50%"/>       
+    </div>
+</body>
+
 </html>

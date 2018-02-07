@@ -7,6 +7,13 @@ body {
     margin: 0;
 }
 
+#my_email {
+    font-size: 16px;
+    color: #f3f3f3;
+    font-weight: normal;
+    line-height: 150%;
+}
+
 .regular_light {
     font-size: 16px;
     color: #f3f3f3;
@@ -123,5 +130,17 @@ div.d_narrow_text {
     }
     div.l_box {
         margin-bottom: 75px;
+    }
+}
+
+@media only screen and (max-device-width: 632px) {
+    #my_email {
+        font-size: 32px;
+    }
+    #d_title {
+        padding-top: 120px;
+    }
+    button {
+        font-size: 32px;
     }
 }
